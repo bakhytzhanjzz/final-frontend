@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Roman Republic</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header id="main-header" class="bg-light py-3">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">The Roman Republic</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="republic.html">The Republic</a></li>
+                        <li class="nav-item"><a class="nav-link" href="empire.html">The Empire</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container my-5">
+            <section id="carousel-section" class="my-5">
+                <h3 class="mb-4">Roman History Highlights</h3>
+                <div id="history-carousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assets/founding.jpg" class="d-block w-100" alt="Roman Republic">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>509 BC - Founding of the Republic</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/tables.png" class="d-block w-100" alt="Roman Law">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>451 BC - Twelve Tables Established</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#history-carousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#history-carousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+                <label for="speed-slider" class="mt-3">Adjust Speed:</label>
+                <input type="range" id="speed-slider" min="1" max="5" value="3" class="form-range">
+            </section>
+
+            <section id="info-section" class="my-5">
+                <h3 class="mb-4">Explore the Roman Republic</h3>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="info-block" data-aos="fade-up">
+                            <img src="assets/republic1.jpg" class="img-fluid" alt="Republic">
+                            <p>Overview of the Roman Republic and its establishment.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="info-block" data-aos="fade-right">
+                            <img src="assets/laws.jpg" class="img-fluid" alt="Laws">
+                            <p>The Twelve Tables: Foundation of Roman Law.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="drag-drop-section" class="my-5">
+                <h3 class="mb-4">Match the Roman Figures</h3>
+                <div class="drag-container">
+                    <div class="drag-items">
+                        <div draggable="true" class="drag-item">Julius Caesar</div>
+                        <div draggable="true" class="drag-item">Cicero</div>
+                    </div>
+                    <div class="drop-zones">
+                        <div class="drop-zone">Statesman</div>
+                        <div class="drop-zone">Military Leader</div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="quiz-section" class="my-5">
+                <h3 class="mb-4">Test Your Knowledge: The Roman Republic</h3>
+                <form id="quiz-form">
+                    <div class="form-group">
+                        <label>1. When was the Roman Republic established?</label>
+                        <div>
+                            <input type="radio" name="q1" value="509"> 509 BC<br>
+                            <input type="radio" name="q1" value="27"> 27 BC<br>
+                            <input type="radio" name="q1" value="753"> 753 BC<br>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>2. What was the primary legal code of the Republic?</label>
+                        <div>
+                            <input type="radio" name="q2" value="Twelve Tables"> Twelve Tables<br>
+                            <input type="radio" name="q2" value="Code of Justinian"> Code of Justinian<br>
+                            <input type="radio" name="q2" value="Hammurabi's Code"> Hammurabi's Code<br>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>3. Who was assassinated in 44 BC?</label>
+                        <div>
+                            <input type="radio" name="q3" value="Julius Caesar"> Julius Caesar<br>
+                            <input type="radio" name="q3" value="Augustus"> Augustus<br>
+                            <input type="radio" name="q3" value="Cicero"> Cicero<br>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>4. What was the name of Rome's governing body during the Republic?</label>
+                        <div>
+                            <input type="radio" name="q4" value="Senate"> Senate<br>
+                            <input type="radio" name="q4" value="Parliament"> Parliament<br>
+                            <input type="radio" name="q4" value="Forum"> Forum<br>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>5. Who was the enemy in the Punic Wars?</label>
+                        <div>
+                            <input type="radio" name="q5" value="Carthage"> Carthage<br>
+                            <input type="radio" name="q5" value="Greece"> Greece<br>
+                            <input type="radio" name="q5" value="Egypt"> Egypt<br>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>6. What title did Augustus hold after the Republic fell?</label>
+                        <div>
+                            <input type="radio" name="q6" value="Emperor"> Emperor<br>
+                            <input type="radio" name="q6" value="Consul"> Consul<br>
+                            <input type="radio" name="q6" value="Dictator"> Dictator<br>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>7. Which river did Julius Caesar famously cross?</label>
+                        <div>
+                            <input type="radio" name="q7" value="Rubicon"> Rubicon<br>
+                            <input type="radio" name="q7" value="Tiber"> Tiber<br>
+                            <input type="radio" name="q7" value="Danube"> Danube<br>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>8. Who were the common people of Rome called?</label>
+                        <div>
+                            <input type="radio" name="q8" value="Plebeians"> Plebeians<br>
+                            <input type="radio" name="q8" value="Patricians"> Patricians<br>
+                            <input type="radio" name="q8" value="Equestrians"> Equestrians<br>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>9. Which Roman leader reformed the army and allowed landless citizens to join?</label>
+                        <div>
+                            <input type="radio" name="q9" value="Marius"> Marius<br>
+                            <input type="radio" name="q9" value="Sulla"> Sulla<br>
+                            <input type="radio" name="q9" value="Pompey"> Pompey<br>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>10. What was the role of a consul in the Republic?</label>
+                        <div>
+                            <input type="radio" name="q10" value="Chief executive and military leader"> Chief executive and military leader<br>
+                            <input type="radio" name="q10" value="Head of religion"> Head of religion<br>
+                            <input type="radio" name="q10" value="Senate's secretary"> Senate's secretary<br>
+                        </div>
+                    </div>
+                    <button id="submit-quiz" class="btn btn-primary">Submit Quiz</button>
+                </form>
+                <p id="quiz-result" class="mt-4"></p>
+            </section>
+
+            <section id="todo-section" class="my-5">
+                <h3 class="mb-4">Interactive To-Do List</h3>
+                <div class="input-group mb-3">
+                    <input type="text" id="new-task" class="form-control" placeholder="Enter new task">
+                    <div class="input-group-append">
+                        <button id="add-task-btn" class="btn btn-success">Add Task</button>
+                    </div>
+                </div>
+                <ul id="task-list" class="list-group"></ul>
+            </section>
+
+            <section id="sort-section" class="my-5">
+                <h3 class="mb-4">Number Sorting Tool</h3>
+                <form id="sort-form">
+                    <div class="form-group">
+                        <label for="number-input">Enter numbers separated by commas:</label>
+                        <input type="text" id="number-input" class="form-control" placeholder="e.g. 3,1,4,1,5,9">
+                    </div>
+                    <button id="sort-asc-btn" class="btn btn-primary mb-2" type="button">Sort Ascending</button>
+                    <button id="sort-desc-btn" class="btn btn-secondary mb-2" type="button">Sort Descending</button>
+                </form>
+                <p>Sorted Numbers: <span id="sorted-numbers"></span></p>
+            </section>
+        </div>
+    </main>
+
+    <footer class="bg-light py-3 text-center">
+        <p class="mb-0">Bakhytzhan</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+
+        const speedSlider = document.getElementById('speed-slider');
+        const carousel = document.querySelector('.carousel');
+        speedSlider.addEventListener('input', function() {
+            const interval = 5000 / speedSlider.value;
+            $('.carousel').carousel('dispose');
+            $('.carousel').carousel({ interval });
+        });      
+        
+        const draggables = document.querySelectorAll('.drag-item');
+        const dropZones = document.querySelectorAll('.drop-zone');
+
+        draggables.forEach(item => {
+            item.addEventListener('dragstart', () => {
+                item.classList.add('dragging');
+            });
+
+            item.addEventListener('dragend', () => {
+                item.classList.remove('dragging');
+            });
+        });
+
+        dropZones.forEach(zone => {
+            zone.addEventListener('dragover', e => {
+                e.preventDefault();
+                const draggable = document.querySelector('.dragging');
+                zone.appendChild(draggable);
+            });
+        });
+
+        document.getElementById("submit-quiz").addEventListener("click", function (e) {
+            e.preventDefault();
+
+            const answers = {
+                q1: "509",
+                q2: "Twelve Tables",
+                q3: "Julius Caesar",
+                q4: "Senate",
+                q5: "Carthage",
+                q6: "Emperor",
+                q7: "Rubicon",
+                q8: "Plebeians",
+                q9: "Marius",
+                q10: "Chief executive and military leader",
+            };
+
+            let score = 0;
+            for (let question in answers) {
+                const selected = document.querySelector(`input[name="${question}"]:checked`);
+                if (selected && selected.value === answers[question]) {
+                    score++;
+                }
+            }
+
+            const resultText = `You scored ${score} out of ${Object.keys(answers).length}. ${
+                score >= 7
+                    ? "Great job! You know your Roman history!"
+                    : "Keep learning about the fascinating Roman Republic!"
+            }`;
+            document.getElementById("quiz-result").innerText = resultText;
+        });
+
+
+        document.getElementById("timeline-btn").addEventListener("click", function () {
+            var timeline = document.getElementById("timeline");
+            timeline.classList.toggle("timeline-hidden");
+        });
+
+        const addTaskBtn = document.getElementById("add-task-btn");
+        const taskList = document.getElementById("task-list");
+
+        addTaskBtn.addEventListener("click", function () {
+            const newTaskInput = document.getElementById("new-task");
+            const taskValue = newTaskInput.value.trim();
+
+            if (taskValue) {
+                const li = document.createElement("li");
+                li.classList.add("list-group-item");
+                li.innerHTML = `${taskValue} <button class="btn btn-danger btn-sm float-right delete-task">Delete</button>`;
+                taskList.appendChild(li);
+                newTaskInput.value = "";
+
+                li.querySelector(".delete-task").addEventListener("click", function () {
+                    taskList.removeChild(li);
+                });
+            } else {
+                alert("Task cannot be empty!");
+            }
+        });
+
+        const sortAscBtn = document.getElementById("sort-asc-btn");
+        const sortDescBtn = document.getElementById("sort-desc-btn");
+
+        function sortNumbers(order) {
+            const input = document.getElementById("number-input").value.trim();
+            if (!input) {
+                alert("Please enter numbers.");
+                return;
+            }
+
+            const numbers = input.split(",").map(num => {
+                const parsed = parseFloat(num.trim());
+                if (isNaN(parsed)) {
+                    alert("Invalid input. Please enter valid numbers.");
+                    return;
+                }
+                return parsed;
+            });
+
+            if (order === "asc") {
+                numbers.sort((a, b) => a - b);
+            } else {
+                numbers.sort((a, b) => b - a);
+            }
+
+            document.getElementById("sorted-numbers").innerText = numbers.join(", ");
+        }
+
+        sortAscBtn.addEventListener("click", function () {
+            sortNumbers("asc");
+        });
+
+        sortDescBtn.addEventListener("click", function () {
+            sortNumbers("desc");
+        });
+    </script>
+</body>
+
+</html>
